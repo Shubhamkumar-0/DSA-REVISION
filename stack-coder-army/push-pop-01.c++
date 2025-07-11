@@ -6,10 +6,13 @@ class stack{
     int size;
     int top;
     public:
+
+    bool flag;
     stack(int s){
         size=s;
         top=-1;
         arr=new int[s];
+        flag=1;
     }
     void push(int value){
         if(top==size-1){
@@ -19,6 +22,7 @@ class stack{
             top++;
             arr[top]=value;
             cout<<"Pushed "<<value<<" into the stack\n";
+            flag=0;
 
         }
     }
@@ -30,6 +34,9 @@ class stack{
             // cout<<"Popped "<<arr[top]<<" from the stack\n";
             top--;
             cout<<"Popped "<<arr[top+1]<<" from the stack\n";
+            if(top==-1){
+                flag=1;
+            }
 
         }
     }
@@ -52,8 +59,17 @@ class stack{
 };
 int main() {
    stack s(s);
-   s.push(5);
-   s.push(6);
-   s.push(7);
-   
+//    s.push(5);
+//    s.push(6);
+//    s.push(7);
+//     cout<<s.peek()<<endl;
+//    s.pop();
+//    cout<<s.peek()<<endl;
+//    cout<<s.IsEmpty()<<endl;
+//    cout<<s.IsSize()<<endl;
+
+    int value=s.peek();
+    if(s.flag==0){
+        cout<<value<<endl;
+    }
 }
