@@ -1,4 +1,4 @@
-# 📘 DSA Revision
+# 📘 DSA Revision 
 
 Welcome to my **Data Structures & Algorithms (DSA) Revision Repository** 🚀  
 This repo is a collection of **important concepts, problems, and implementations** to revise before interviews, exams, and placements.  
@@ -14,25 +14,48 @@ This repo is a collection of **important concepts, problems, and implementations
 ---
 
 ## 📂 Repository Structure
+
+```text
 DSA-Revision/
 │
 ├── 📑 Notes/ # Theory notes for quick revision
-│ ├── arrays.md
-│ ├── linked_list.md
-│ ├── trees.md
-│ └── graphs.md
+│   ├── arrays.md
+│   ├── linked_list.md
+│   ├── stack_queue.md
+│   ├── trees.md
+│   ├── graphs.md
+│   └── dp.md
 │
 ├── 💻 Code/ # Code implementations
-│ ├── arrays/
-│ ├── linked_list/
-│ ├── stack_queue/
-│ ├── trees/
-│ └── graphs/
+│   ├── arrays/
+│   │   ├── insertion.cpp
+│   │   ├── deletion.cpp
+│   │   └── traversal.cpp
+│   ├── linked_list/
+│   │   ├── singly.cpp
+│   │   ├── doubly.cpp
+│   │   └── circular.cpp
+│   ├── stack_queue/
+│   │   ├── stack.cpp
+│   │   └── queue.cpp
+│   ├── trees/
+│   │   ├── binary_tree.cpp
+│   │   └── bst.cpp
+│   └── graphs/
+│       ├── bfs.cpp
+│       ├── dfs.cpp
+│       └── shortest_path.cpp
 │
 ├── 📝 Practice/ # Solved problems
-│ ├── arrays_problems/
-│ ├── dp_problems/
-│ └── graph_problems/
+│   ├── arrays_problems/
+│   │   ├── two_sum.cpp
+│   │   └── kadane.cpp
+│   ├── dp_problems/
+│   │   ├── knapsack.cpp
+│   │   └── lcs.cpp
+│   └── graph_problems/
+│       ├── dijkstra.cpp
+│       └── topological_sort.cpp
 │
 └── README.md
 
